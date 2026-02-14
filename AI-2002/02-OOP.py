@@ -62,7 +62,7 @@ class Severity(Enum):
     LOW = auto()
 
 class can_perform(Protocol):
-    def perform():
+    def perform(self):
         ...
 
 @dataclass
@@ -159,7 +159,7 @@ def T3():
 #                   Task 4
 #######################################################
 class can_work(Protocol):
-    def work() -> None:
+    def work(self) -> None:
         ...
 
 @dataclass
